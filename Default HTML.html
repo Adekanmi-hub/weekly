@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset=utf-8>
+        <link rel="stylesheet" type="text/css" href="External.css">
+    </head>
+    <body>
+        <div id="Mini_Calculator">
+            <h3>Mini-Calculator</h>
+            <!-- Putting form elements into a table for proper spacing and structure -->
+            <form onsubmit="return_false;">
+                <table id="mini_calculator_table">
+                    <tr>
+                        <td><label for="value01">First Value: </label></td>
+                        <td><label for="value02">Second Value: </label></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="text" id="value01" name="value01"></td>   
+                        <td><input type="text" id="value02" name="value02"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button 
+                            id="add"
+                            type="button"
+                            onclick="document.getElementById('result').innerHTML = 'The result of the addition is ' + 
+                            (Number(document.getElementById('value01').value) + Number(document.getElementById('value02').value))"
+                            >
+                                Add the two numbers
+                            </button>
+                        </td>
+                        <td>
+                            <button 
+                            id="divide"
+                            type="button"
+                            onclick="document.getElementById('result').innerHTML = 'The result of the division is ' + 
+                            (Number(document.getElementById('value01').value) / Number(document.getElementById('value02').value))" 
+                            >
+                                Divide the two numbers
+                            </button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button 
+                            id="subtract"
+                            type="button"
+                            onclick="document.getElementById('result').innerHTML = 'The result of the subtraction is ' + 
+                            (Number(document.getElementById('value01').value) - Number(document.getElementById('value02').value))" 
+                            >
+                                Subtract the two numbers
+                            </button>
+                        </td>
+                        <td>
+                            <button 
+                            id="multiply"
+                            type="button"
+                            onclick="document.getElementById('result').innerHTML = 'The result of the multiplication is ' + 
+                            (Number(document.getElementById('value01').value) * Number(document.getElementById('value02').value))" 
+                            >
+                                Multiply the two numbers
+                            </button>
+                        </td>
+
+                            
+                    </tr>
+                </table>    
+            </form>
+            
+            <br/>
+            <h3 id="result"></h3>     
+        </div>
+    </body>
+</html>

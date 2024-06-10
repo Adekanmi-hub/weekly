@@ -1,0 +1,6 @@
+#mini_calculator_table{
+
+    /* Width between each cell is 10px and height between each row is 2px*/
+    border-spacing:6px 2px;
+}
+
